@@ -6,6 +6,7 @@
     <title>Welcome, Atharv</title>
     <link rel="stylesheet" href="./styles/time.css" />
     <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
   </head>
   <body>
     <div id="backgroundVideoContainer">
@@ -19,7 +20,14 @@
         <div class="day"></div>
         <div class="time"></div>
       </div>
+      <div class="grid" id="gridContainer"></div>
     </div>
   </body>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+  </script>
+  <script src="./scripts/database.js"></script>
   <script src="./scripts/time.js"></script>
+
 </html>
