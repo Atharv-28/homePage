@@ -1,0 +1,7 @@
+.gcse-search{
+    display: flex;
+    cursor: pointer;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(red, green, blue, 0.3);
+}
