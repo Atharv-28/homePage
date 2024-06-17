@@ -9,6 +9,9 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background-image: url("../Assets/nightF.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 #backgroundVideo {
@@ -21,5 +24,12 @@
   flex-direction: column;
   position: relative;
   z-index: 1;
-  backdrop-filter: blur(50px);
+  justify-content: center;
+  gap: 80px;
+  align-items: center
+  /* backdrop-filter: blur(50px); */
+}
+.timeMod{
+  width: 250px;
+    backdrop-filter: blur(1px);
 }

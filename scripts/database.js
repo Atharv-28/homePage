@@ -52,8 +52,9 @@ if (!window.firebase || !firebase.apps.length) {
           <a href="${data.url}">
             <img src="${data.img}" alt="Image" />
           </a>
+          <p>${data.name}</p>
         `;
-        
+        console.log(data.name);
         // Append card to the grid container
         gridContainer.appendChild(card);
       });
