@@ -1,0 +1,85 @@
+    #popBlock{
+      display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: hidden;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation-name: animatetop;
+    animation-duration: 0.5s;
+    animation-timing-function:ease-in-out;
+    }
+
+    @keyframes animatetop {
+      from {
+          transform: scale(0.01);
+          background-color: transparent;
+          /* top: -200px; */
+          opacity: 0;
+      }
+  
+      to {
+          transform: scale(1);
+          /* top: 0; */
+          opacity: 1
+      }
+  }
+    
+    .modal {
+      padding-top: 10vh;
+      z-index: 1; /* Sit on top */
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      width: 60vw;
+      border: 2px solid yellow;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      justify-self: center;
+      width:max-content ;
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #888;
+    }
+
+    .modalClose{
+      align-self: flex-start;
+    }
+
+    .close {
+      display: flex;
+      justify-content: center;
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      width: 40px;
+    }
+
+    .close:hover,
+    .close:focus {
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 50%;
+      box-shadow: 5px 5px 5px 5px black;
+    }
